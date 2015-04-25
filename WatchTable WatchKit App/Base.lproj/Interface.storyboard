@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchTable_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="FTN-iq-dPP">
+                            <items>
+                                <tableRow identifier="tableRow" id="cfi-ap-1m0" customClass="TableRow" customModule="WatchTable_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="HUJ-iV-e0T">
+                                        <items>
+                                            <label alignment="left" text="Name" id="HXG-5q-Bw5"/>
+                                            <label alignment="left" text="Age" id="2DJ-3x-qi3"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="ageLabel" destination="2DJ-3x-qi3" id="DhZ-NU-QYl"/>
+                                        <outlet property="nameLabel" destination="HXG-5q-Bw5" id="D31-7c-c5O"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="FTN-iq-dPP" id="lSJ-nm-gev"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
